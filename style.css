@@ -432,6 +432,7 @@
     .search a {
       display: flex;
       flex-wrap: nowrap;
+      
     }
   
     .heading1 .ham {
