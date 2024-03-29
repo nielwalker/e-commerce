@@ -55,7 +55,11 @@
                         <div class="col">&dollar; 1,994.68 <span class="close">&#10005;</span></div>
                     </div>
                 </div>
-                <div class="back-to-shop"><a href="#">&leftarrow;</a><span class="text-muted">Back to shop</span></div>
+                <div class="back-to-shop">
+                    <ul>
+                        <li><a href="store.html" >Back to shop</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col-md-4 summary">
                 <div><h5><b>Summary</b></h5></div>
@@ -74,10 +78,15 @@
                     <div class="col">TOTAL</div>
                     <div class="col text-right">&dollar; 6,024.32 </div>
                 </div>
-                <button class="btn">CHECKOUT</button>
+                <button type="button" class="btn">CHECKOUT</button>
             </div>
         </div>
         
     </div>
+    <script>
+        function backStore(){
+        window.location.assign = ("store.html");
+      }
+    </script>
 </body>
 </html>

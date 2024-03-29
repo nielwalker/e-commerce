@@ -46,8 +46,7 @@
         var password = document.getElementById("password").value;
 
         if (username == validUsername && password == validPassword) {
-          window.location.assign = "store.html";
-          alert("Welcome" + " " + validUsername);
+          window.location.href = ("store.html");
         } else {
           alert("Invalid username or password. Please try again.");
           return;

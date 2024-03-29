@@ -7,3 +7,7 @@ close.addEventListener("click", () => {
 open.addEventListener("click", () => {
   menu.style.visibility = "visible";
 });
+
+function cart(){
+  window.location.assign = ("index.html");
+}

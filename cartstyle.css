@@ -7,6 +7,8 @@ body{
     font-size: 0.8rem;
     font-weight: bold;
 }
+
+
 .title{
     margin-bottom: 5vh;
 }
@@ -126,8 +128,7 @@ input:focus::-webkit-input-placeholder
     outline: none;
     box-shadow: none;
     color: white;
-    -webkit-box-shadow: none;
-    -webkit-user-select: none;
+    
     transition: none; 
 }
 .btn:hover{
@@ -145,4 +146,9 @@ a:hover{
     background-repeat: no-repeat;
     background-position-x: 95%;
     background-position-y: center;
+}
+
+.back-to-shop ul li a{
+    text-decoration: none;
+    color: red;
 }
