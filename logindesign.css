@@ -1,36 +1,230 @@
-body{
-    background: #c9ccd1;
-    }
-    .form-style input{
-    border:0;
-    height:50px;
-    border-radius:0;
-    border-bottom:1px solid #ebebeb;
-    }
-    .form-style input:focus{
-    border-bottom:1px solid #007bff;
-    box-shadow:none;
-    outline:0;
-    background-color:#ebebeb;
-    }
-    .sideline {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color:#ccc;
-    }
-    button{
-    height:50px;
-    }
-    .sideline:before,
-    .sideline:after {
-    content: '';
-    border-top: 1px solid #ebebeb;
-    margin: 0 20px 0 0;
-    flex: 1 0 20px;
-    }
-    .sideline:after {
-    margin: 0 0 0 20px;
-    }
+body {
+  background: #241b1b;
+}
+
+.container {
+  height: 100%;
+  background-color: rgb(112, 112, 112);
+}
+
+.contain1 {
+}
+
+.form-style input {
+  border: 0;
+  height: 50px;
+  border-radius: 0;
+  border-bottom: 1px solid #ebebeb;
+}
+.form-style input:focus {
+  border-bottom: 1px solid #007bff;
+  box-shadow: none;
+  outline: 0;
+  background-color: #ebebeb;
+}
+.sideline {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ccc;
+}
+button {
+  height: 50px;
+}
+.sideline:before,
+.sideline:after {
+  content: "";
+  border-top: 1px solid #ebebeb;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+}
+.sideline:after {
+  margin: 0 0 0 20px;
+}
+
+.img-slider {
+  display: flex;
+  float: left;
+  position: relative;
+  width: 80%;
+  height: 60%;
+  animation-name: slide1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transition-duration: 2s;
+}
+
+.img-slider img {
+  height: 720px;
+  width: 1080px;
+}
+@keyframes slide1 {
+  0% {
+    left: 0px;
+  }
+  15% {
+    left: 0px;
+  }
+  20% {
+    left: -1080px;
+  }
+  32% {
+    left: -1080px;
+  }
+  35% {
+    left: -2160px;
+  }
+  47% {
+    left: -2160px;
+  }
+  50% {
+    left: -3240px;
+  }
+  63% {
+    left: -3240px;
+  }
+  66% {
+    left: -4320px;
+  }
+  79% {
+    left: -4320px;
+  }
+  82% {
+    left: -5400px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+.section1 {
+  width: 100%;
+  overflow: hidden;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+}
+.container .form-1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 40%;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
+}
+.form-1 h1 {
+  text-align: center;
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+input[type="text"],
+input[type="password"] {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  background: none;
+  margin: 0.9rem 2rem;
+  font-size: 1rem;
+}
+label {
+  margin: 0 2rem;
+}
+span {
+  margin: 0 2rem;
+  color: blue;
+  cursor: pointer;
+}
+button {
+  margin: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: #fff;
+  background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+}
+/* ........///Sign-Up///......... */
+p {
+  text-align: center;
+  font-weight: bolder;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+}
+.icons a {
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0.2rem;
+}
+.icons .fa-facebook-f {
+  border-radius: 50%;
+  background: #5d75ab;
+  color: #fff;
+  padding: 1rem;
+}
+.icons .fa-twitter {
+  border-radius: 50%;
+  background: #1da1f2;
+  color: white;
+  padding: 1rem;
+}
+.icons .fa-google {
+  border-radius: 50%;
+  background: #ee5645;
+  color: #fff;
+  padding: 1rem;
+}
+/* ....///Media query///..... */
+@media (max-width: 501px) {
+  html {
+    font-size: 15px;
+  }
+  .container .form-1 {
+    width: 300px;
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .container .form-1 {
+    width: 450px;
+  }
+}
+@media (min-width: 765px) and (max-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+  .container .form-1 {
+    width: 540px;
+    height: 550px;
+  }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  .container {
+    height: 100vmax;
+  }
+}
